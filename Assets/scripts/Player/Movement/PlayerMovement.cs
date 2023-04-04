@@ -84,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator CoolDown()
     {
-        cooledDown=false;
         yield return new WaitForSeconds(dashCoolDown);
         timer=dashCoolDown;
         cooledDown=true;

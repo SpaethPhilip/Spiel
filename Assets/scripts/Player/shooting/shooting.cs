@@ -36,6 +36,7 @@ public class shooting : MonoBehaviour
                 {
                     if(canshoot==true)
                 {
+                    AudioManager.Play("gun");
                     munition=munition-1;
                     Instantiate(projectile,shootingpoint.transform.position,transform.rotation);
                     canshoot=false;
@@ -47,6 +48,7 @@ public class shooting : MonoBehaviour
                 {
                     if(canshoot==true)
                 {
+                    AudioManager.Play("rocket");
                     munitionRocket=munitionRocket-1;
                     Instantiate(rocket,shootingpoint.transform.position,transform.rotation);
                     canshoot=false;

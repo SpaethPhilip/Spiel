@@ -34,4 +34,12 @@ public class AudioManager : MonoBehaviour
         Instantiate(prefab);
         return true;
     }
+    static public void Stop(string name)
+    {      
+        GameObject go = GameObject.Find (name);
+
+        if (go){
+            Destroy (go.gameObject);
+        }
+    }
 }
