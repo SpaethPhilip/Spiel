@@ -20,7 +20,6 @@ public class AudioManager : MonoBehaviour
                 string n = sounds[i].name;
                 
                 GameObject go = GameObject.Find (n);
-                //if the tree exist then destroy it
                 if (go){
                     Destroy (go.gameObject);
                 }
